@@ -42,6 +42,7 @@ class Particle : public Object3D, public SceneGraph::Drawable3D
         void handleBounds(Float dt);
 
         const Vector3 _SCALING = {0.1f, 0.1f, 0.1f};
+        Integration _integrationScheme;
         UnsignedInt _instanceId;
         Float _mass;
         Vector3 _position;
